@@ -1,3 +1,12 @@
+# Blog
+
+- clone / download
+- create & insert SQL database '/app/Config/Schema/cake_2x_blog.sql'
+- database configuration '/app/Config/database.php'
+- change Security.salt & Security.cipherSeed value '/app/Config/
+core.php'
+- login page '/login' - username: 'admin' - password: 'admin'
+
 # CakePHP
 
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
