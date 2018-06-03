@@ -48,7 +48,6 @@ class MenusController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Menu->create();
 			if ($this->Menu->save($this->request->data)) {
-				Cache::delete('mainmenu', 'long');
 				$this->Flash->success(__('The menu has been saved.'));
 				return $this->redirect(array('action' => 'edit', $this->Menu->id));
 			} else {
@@ -73,7 +72,6 @@ class MenusController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Menu->save($this->request->data)) {
-				Cache::delete('mainmenu', 'long');
 				$this->Flash->success(__('The menu has been updated.'));
 				return $this->redirect(array('action' => 'edit', $this->Menu->id));
 			} else {
@@ -102,7 +100,6 @@ class MenusController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Menu->delete()) {
-			Cache::delete('mainmenu', 'long');
 			$this->Flash->success(__('The menu has been deleted.'));
 		} else {
 			$this->Flash->error(__('The menu could not be deleted. Please, try again.'));
@@ -122,8 +119,8 @@ class MenusController extends AppController {
 		}
 
 		if ($delta > 0) {
-			Cache::delete('navmenu', 'long');
 			$this->Menu->moveDown($this->Menu->id, abs($delta));
+			Cache::delete('mainmenu', 'long');
 			$this->Flash->success('The menu has been moved down.');
 		} else {
 			$this->Flash->error(
@@ -147,8 +144,8 @@ class MenusController extends AppController {
 		}
 
 		if ($delta > 0) {
-			Cache::delete('navmenu', 'long');
 			$this->Menu->moveUp($this->Menu->id, abs($delta));
+			Cache::delete('mainmenu', 'long');
 			$this->Flash->success('The menu has been moved up.');
 		} else {
 			$this->Flash->error(

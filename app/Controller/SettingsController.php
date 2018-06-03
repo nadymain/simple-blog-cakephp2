@@ -27,7 +27,6 @@ class SettingsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Setting->create();
 			if ($this->Setting->save($this->request->data)) {
-				Cache::delete('cache_settings', 'long');
 				$this->Flash->success(__('The setting has been saved.'));
 				return $this->redirect(array('action' => 'edit', $this->Setting->id));
 			} else {
@@ -49,7 +48,6 @@ class SettingsController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Setting->save($this->request->data)) {
-				Cache::delete('cache_settings', 'long');
 				$this->Flash->success(__('The setting has been updated.'));
 				return $this->redirect(array('action' => 'edit', $this->Setting->id));
 			} else {
@@ -75,7 +73,6 @@ class SettingsController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Setting->delete()) {
-			Cache::delete('cache_settings', 'long');
 			$this->Flash->success(__('The setting has been deleted.'));
 		} else {
 			$this->Flash->error(__('The setting could not be deleted. Please, try again.'));

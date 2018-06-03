@@ -107,4 +107,16 @@ class Menu extends AppModel {
 		)
 	);
 
+/**
+ * beforeSave
+ *
+ */
+	public function beforeSave($options = array()) {
+		Cache::delete('mainmenu', 'long');
+	}
+
+	public function beforeDelete($cascade = true) { 
+		Cache::delete('mainmenu', 'long');
+	}
+
 }

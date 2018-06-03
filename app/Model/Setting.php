@@ -41,4 +41,16 @@ class Setting extends AppModel {
 			),
 		),
 	);
+
+/**
+ * beforeSave
+ *
+ */
+	public function beforeSave($options = array()) {
+		Cache::delete('cache_settings', 'long');
+	}
+
+	public function beforeDelete($cascade = true) { 
+		Cache::delete('cache_settings', 'long');
+	}
 }
