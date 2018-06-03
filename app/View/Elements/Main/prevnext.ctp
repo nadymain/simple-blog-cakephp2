@@ -1,3 +1,5 @@
+<?php if (!empty($prevnext['prev'] || $prevnext['next'])) : ?>
+<div class="prevnext clear">
 <?php if ($prevnext['prev']) : ?>
 	<?php echo $this->Html->link('&#10229;', array(
 		'controller' => 'articles',
@@ -10,6 +12,7 @@
 		'escape' => false
 	)); ?>
 <?php endif; ?>
+
 <?php if ($prevnext['next']) : ?>
 	<?php echo $this->Html->link('&#10230;', array(
 		'controller' => 'articles',
@@ -21,4 +24,6 @@
 		'rel' => 'next',
 		'escape' => false
 	)); ?>
+<?php endif; ?>
+</div>
 <?php endif; ?>

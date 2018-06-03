@@ -102,6 +102,4 @@
     }
 ?>
 
-<div class="prevnext clear">
-    <?php echo $this->element('Main/prevnext'); ?>
-</div>
+<?php echo $this->element('Main/prevnext'); ?>

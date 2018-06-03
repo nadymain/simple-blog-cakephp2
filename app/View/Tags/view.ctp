@@ -28,14 +28,13 @@
 	<?php echo $this->element('Main/articlelist'); ?>
 </div>
 
-<div class="paginate">
-    <?php $this->Paginator->options(
-       array('url' => 
-           array(
+<?php $this->Paginator->options(
+    array('url' => 
+        array(
             'controller' => 'tags', 
             'action' => 'view',
             'slug' => $tag['Tag']['slug']
         )
-    )); ?>
-	<?php echo $this->element('Main/paginate'); ?>
-</div>
+    )
+); ?>
+<?php echo $this->element('Main/paginate'); ?>

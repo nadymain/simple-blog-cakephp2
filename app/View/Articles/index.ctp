@@ -12,6 +12,4 @@
 	<?php echo $this->element('Main/articlelist'); ?>
 </div>
 
-<div class="paginate clear">
-	<?php echo $this->element('Main/paginate'); ?>
-</div>
+<?php echo $this->element('Main/paginate'); ?>

@@ -23,7 +23,7 @@
 			); ?>
 		</h2>
 	</header>
-	<div class="content">
+	<div class="content clear">
 		<p>
 		<?php
 			$excerpt = strip_tags($article['Article']['content']);
