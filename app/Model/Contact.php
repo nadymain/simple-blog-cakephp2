@@ -54,7 +54,7 @@ class Contact extends AppModel {
  */
     public function _execute($data){
         $this->set($data);
-        if($this->validates()){
+        if ($this->validates()) {
         	App::uses('CakeEmail', 'Network/Email');
             $mail = new CakeEmail();
             $mail->to(Configure::read('site_email'))
