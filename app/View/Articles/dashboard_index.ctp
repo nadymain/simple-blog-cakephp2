@@ -16,7 +16,7 @@
 
 <div class="filter">
 	<ul>
-		<li class="<?php echo(empty($this->request->query)) ? 'active' : 'inactive' ?>">
+		<li class="<?php echo (empty($this->request->query)) ? 'active' : 'inactive' ?>">
 			<?php echo $this->Html->link('Total ('. $total .')', 
 				array(
 					'controller' => 'articles',
