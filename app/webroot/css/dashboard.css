@@ -80,7 +80,7 @@ iframe {
 
 hr {
     border: none;
-    border-top: 1px solid #3ab7a8;
+    border-top: 1px solid #39b7a8;
     height: 0;
 }
 
@@ -185,11 +185,11 @@ fieldset {
     display: block;
     line-height: 5rem;
     color: #fff;
-    background-color: #3ab7a8;
+    background-color: #39b7a8;
 }
 
 .topbar .dashboard a:focus {
-    color: #3ab7a8;
+    color: #39b7a8;
     background-color: #434350;
 }
 
@@ -207,7 +207,7 @@ fieldset {
 
 .topbar .btn-menu a:focus,
 .topbar .btn-menu .show {
-    color: #3ab7a8;
+    color: #39b7a8;
     background-color: #434350;
 }
 
@@ -262,7 +262,7 @@ fieldset {
 .topbar .dropdown a:focus,
 .topbar .dropdown.active>li>a,
 .topbar .dropdown.active ul a:hover {
-    color: #3ab7a8;
+    color: #39b7a8;
     background-color: #fff;
 }
 
@@ -309,7 +309,7 @@ fieldset {
 .aside .active>a {
     padding-left: 2.5rem;
     color: #fff;
-    border-left: 0.5rem solid #3ab7a8;
+    border-left: 0.5rem solid #39b7a8;
 }
 
 .aside hr {
@@ -342,7 +342,7 @@ fieldset {
     width: 5rem;
     text-align: center;
     display: block;
-    color: #3ab7a8;
+    color: #39b7a8;
     border-radius: 0.125rem;
     background-color: #3a3a44;
 }
@@ -358,7 +358,7 @@ fieldset {
 }
 
 .heading .title span {
-    color: #3ab7a8;
+    color: #39b7a8;
 }
 
 .heading .link {
@@ -367,7 +367,7 @@ fieldset {
     line-height: 5rem;
     display: block;
     text-align: center;
-    color: #3ab7a8;
+    color: #39b7a8;
     border-radius: 0.125rem;
     background-color: #3a3a44;
 }
@@ -407,7 +407,7 @@ fieldset {
 }
 
 .filter .active a {
-    color: #3ab7a8;
+    color: #39b7a8;
 }
 
 .filter input {
@@ -448,6 +448,7 @@ fieldset {
 
 
 /* table */
+
 .table {
     display: block;
     width: 100%;
@@ -467,7 +468,7 @@ fieldset {
 }
 
 .table a:hover {
-    color: #3ab7a8;
+    color: #39b7a8;
 }
 
 .table thead {
@@ -476,7 +477,7 @@ fieldset {
 }
 
 .table thead a:focus {
-    color: #3ab7a8;
+    color: #39b7a8;
 }
 
 .table tr {
@@ -489,7 +490,7 @@ fieldset {
 
 .table th {
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid #3ab7a8;
+    border-bottom: 1px solid #39b7a8;
 }
 
 .table td {
@@ -576,7 +577,7 @@ fieldset {
 }
 
 .paginate .current {
-    color: #3ab7a8;
+    color: #39b7a8;
 }
 
 .paginate p {
@@ -719,11 +720,11 @@ fieldset {
     font-weight: 400;
     line-height: 4rem;
     color: #fff;
-    background-color: #3ab7a8;
+    background-color: #39b7a8;
 }
 
 .form .submit input:focus {
-    color: #3ab7a8;
+    color: #39b7a8;
     background-color: #2f2f38;
 }
 
@@ -837,7 +838,7 @@ fieldset {
     padding-bottom: 1rem;
     margin-bottom: 3rem;
     line-height: 1;
-    border-bottom: 1px dotted #3ab7a8;
+    border-bottom: 1px dotted #39b7a8;
 }
 
 .message.error {
@@ -847,7 +848,7 @@ fieldset {
 .error-message {
     font-size: 1.2rem;
     margin-top: 0.2rem;
-    color: #3ab7a8;
+    color: #39b7a8;
 }
 
 .version {
